@@ -1,7 +1,11 @@
 config {
   type: "incremental",
   schema: "rpt",
-  uniqueKey: ["o_orderkey"]
+  uniqueKey: ["o_orderkey"],
+  assertions: {
+  uniqueKey: ["o_orderkey"],
+    nonNull: ["o_orderkey", "o_custkey", "o_orderstatus"],
+  }
 }
 
 select 

@@ -1,7 +1,11 @@
 config {
   type: "incremental",
   schema: "rpt",
-  uniqueKey: ["s_suppkey"]
+  uniqueKey: ["s_suppkey"],
+  assertions: {
+    uniqueKey: ["s_suppkey"],
+    nonNull: ["s_suppkey", "s_nationkey"],
+  }
 }
 
 select

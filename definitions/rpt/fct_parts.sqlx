@@ -1,6 +1,9 @@
 config {
   type: "table",
-  schema: "rpt"
+  schema: "rpt",
+  assertions: {
+    nonNull: ["ps_partsuppkey", "ps_partkey"],
+  }
 }
 
 select

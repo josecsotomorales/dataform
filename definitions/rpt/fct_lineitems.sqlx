@@ -1,7 +1,11 @@
 config {
   type: "incremental",
   schema: "rpt",
-  uniqueKey: ["l_lineitemkey"]
+  uniqueKey: ["l_lineitemkey"],
+  assertions: {
+  uniqueKey: ["l_lineitemkey"],
+    nonNull: ["l_orderkey", "l_partkey", "l_suppkey"],
+  }
 }
 
 select

@@ -1,7 +1,11 @@
 config {
   type: "incremental",
   schema: "rpt",
-  uniqueKey: ["r_regionkey"]
+  uniqueKey: ["r_regionkey"],
+  assertions: {
+    uniqueKey: ["r_regionkey"],
+    nonNull: ["r_regionkey", "r_name"],
+  }
 }
 
 select

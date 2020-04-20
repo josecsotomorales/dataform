@@ -1,7 +1,11 @@
 config {
   type: "incremental",
   schema: "rpt",
-  uniqueKey: ["p_partkey"]
+  uniqueKey: ["p_partkey"],
+  assertions: {
+    uniqueKey: ["p_partkey"],
+    nonNull: ["p_partkey", "p_name"],
+  }
 }
 
 select 
