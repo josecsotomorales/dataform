@@ -1,1 +1,14 @@
-{}
+{
+  "schedules": [{
+    "name": "EDW_LOAD",
+    "options": {
+      "includeDependencies": false,
+      "fullRefresh": false
+    },
+    "cron": "54 */24 * * *",
+    "notification": {
+      "onSuccess": false,
+      "onFailure": false
+    }
+  }]
+}
