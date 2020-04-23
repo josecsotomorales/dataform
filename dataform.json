@@ -1,5 +1,5 @@
 {
     "defaultSchema": "edw_df",
-    "assertionSchema": "assertions",
+    "assertionSchema": "tst_df",
     "warehouse": "compute_wh"
 }
