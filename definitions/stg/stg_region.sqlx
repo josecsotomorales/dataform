@@ -1,6 +1,7 @@
 config {
   type: "view",
-  schema: "stg"
+  schema: "stg",
+  tags: ["stg"]
 }
 
 select
