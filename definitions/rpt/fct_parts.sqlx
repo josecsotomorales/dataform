@@ -1,6 +1,7 @@
 config {
   type: "table",
   schema: "rpt",
+  tags: ["rpt", "fct"],
   assertions: {
     nonNull: ["ps_partsuppkey", "ps_partkey"],
   }

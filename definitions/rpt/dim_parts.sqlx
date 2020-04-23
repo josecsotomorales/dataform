@@ -1,6 +1,7 @@
 config {
   type: "incremental",
   schema: "rpt",
+  tags: ["rpt", "dim"],
   uniqueKey: ["p_partkey"],
   assertions: {
     uniqueKey: ["p_partkey"],

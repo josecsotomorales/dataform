@@ -1,6 +1,7 @@
 config {
   type: "incremental",
   schema: "rpt",
+  tags: ["rpt", "fct"],
   uniqueKey: ["o_orderkey"],
   assertions: {
   uniqueKey: ["o_orderkey"],
