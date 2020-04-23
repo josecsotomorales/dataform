@@ -25,7 +25,7 @@ Commands:
 Try running the following commands:
 - ```dataform init <warehouse> [project-dir]```
 - ```dataform init-creds <warehouse> [project-dir]```
-- ```dataform compilev
+- ```dataform compile```
 - ```dataform test```
 - ```dataform run --dry-run```
 - ```dataform run```
