@@ -7,4 +7,4 @@ select
   r_regionkey,
   r_name,
   r_comment
-from ${ref("raw_region")}
+from ${ ref('tpch_sf1', 'region') }

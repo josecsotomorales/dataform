@@ -10,4 +10,4 @@ select
   ps_availqty,
   ps_supplycost,
   ps_comment
-from ${ref("raw_partsupp")}
+from ${ ref('tpch_sf1', 'partsupp') }

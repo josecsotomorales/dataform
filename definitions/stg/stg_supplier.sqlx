@@ -13,6 +13,6 @@ select
     r_name,
     s_phone,
     s_acctbal
-from ${ ref('raw_supplier') }
-left join ${ ref('raw_nation') } on s_nationkey = n_nationkey
-left join ${ ref('raw_region') } on n_regionkey = r_regionkey
+from ${ ref('tpch_sf1', 'supplier') }
+left join ${ ref('tpch_sf1', 'nation') } on s_nationkey = n_nationkey
+left join ${ ref('tpch_sf1', 'region') } on n_regionkey = r_regionkey

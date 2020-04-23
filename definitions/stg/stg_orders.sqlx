@@ -13,4 +13,4 @@ select
   o_clerk,
   o_shippriority,
   o_comment 
-from ${ref("raw_orders")}
+from ${ ref('tpch_sf1', 'orders') }

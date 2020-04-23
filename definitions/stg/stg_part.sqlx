@@ -13,4 +13,4 @@ select
   p_container,
   p_retailprice,
   p_comment
-from ${ref("raw_part")}
+from ${ ref('tpch_sf1', 'part') }

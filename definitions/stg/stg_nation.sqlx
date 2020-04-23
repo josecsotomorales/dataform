@@ -8,4 +8,4 @@ select
   n_name,
   n_regionkey,
   n_comment
-from ${ref("raw_nation")}
+from ${ ref('tpch_sf1', 'nation') }
