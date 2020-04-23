@@ -1,5 +1,5 @@
 {
-    "defaultSchema": "dataform",
-    "assertionSchema": "dataform_assertions",
-    "warehouse": "snowflake"
+    "defaultSchema": "edw_df",
+    "assertionSchema": "assertions",
+    "warehouse": "compute_wh"
 }
