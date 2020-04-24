@@ -23,8 +23,7 @@ Commands:
 ### Using the sample project
 
 Try running the following commands:
-- ```dataform init <warehouse> [project-dir]```
-- ```dataform init-creds <warehouse> [project-dir]```
+- ```dataform init-creds snowflake [project-dir]```
 - ```dataform compile```
 - ```dataform test```
 - ```dataform run --dry-run```
